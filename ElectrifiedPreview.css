@@ -1,5 +1,5 @@
-@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 :root {
+  --version: "1.0.9 Preview";
   --TB-top: calc(var(--server-container) + var(--window-padding));
   --TB-tr-roundness: var(--window-roundness);
   --TB-position-top: var(--TB-top, var(--window-padding));
@@ -25,9 +25,6 @@
   --discord-spotify: 29, 185, 84;
   --discord-twitch: 89, 54, 149;
   --discord-xbox: 16, 124, 16;
-  --version: "Electrified Preview 1.0.0";
-  --channeldms-popout-width: 500px;
-  --channeldms-popout-collapsed: 50px;
   --hue: 0deg;
   --saturation: 0%;
   --lightness: 10%;
@@ -83,72 +80,9 @@
   --brand-experiment: rgb(var(--accent), .35);
   --brand-experiment-560: rgb(var(--accent), .55);
   --brand-experiment-600: rgb(var(--accent), .4);
-  --rs-small-spacing: 2px; /* Spacing between profile image and outer ring on small icons (e.g. member list) | Default: 2px */
-  --rs-medium-spacing: 4px; /* Spacing between profile image and outer ring on medium icons (e.g. user popout) | Default: 4px */
-  --rs-large-spacing: 4px; /* Spacing between profile image and outer ring on medium icons (e.g. user popout fullscreen) | Default: 4px */
-  --rs-small-width: 1.5px; /* Ring width (follows same sizing as above) | Default: 1.5px */
-  --rs-medium-width: 2px; /* Default: 2px */
-  --rs-large-width: 2px; /* Default: 2px */
-  --rs-avatar-shape: var(--avatar-roundness, 50%); /* Border-radius for profile image | Default: 50% */
-  /* Customizable colors */
-  --rs-online-color: #43b581; /* Default: #43b581 */
-  --rs-idle-color: #faa61a; /* Default: #faa61a */
-  --rs-dnd-color: #f04747; /* Default: #f04747 */
-  --rs-offline-color: #636b75; /* Default: #636b75 */
-  --rs-streaming-color: #643da7; /* Default: #643da7 */
-  --rs-invisible-color: #747f8d; /* Default: #747f8d */
-  --rs-phone-color: var(--rs-online-color); /* Color of the phone for mobile users | Default: var(--rs-online-color) */
-  --rs-phone-visible: block; /* Visibility of the phone for mobile users | Default: block */
-
 }
 
-#app-mount .guilds-2JjMmN .tree-3agP2X {
-  outline: none !important;
-}
-#app-mount .guilds-2JjMmN .scroller-3X7KbA {
-  margin-bottom: var(--user-area, 220px);
-}
-#app-mount .guilds-2JjMmN .unreadMentionsIndicatorBottom-3RJMnQ {
-  bottom: calc(var(--user-area) + 10px);
-}
-#app-mount .panels-3wFtMD > .container-YkUktl {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  flex-direction: column-reverse;
-  padding: 0 0 24px;
-  width: var(--guilds-width, 72px);
-  height: auto;
-  border-top: none;
-}
-#app-mount .panels-3wFtMD > .container-YkUktl > [style="flex: 0 1 auto;"] {
-  flex-direction: column;
-  width: 100%;
-}
-#app-mount .panels-3wFtMD > .container-YkUktl > [style="flex: 0 1 auto;"] .button-12Fmur {
-  width: 100%;
-  border-radius: 0;
-  padding: 12px 0;
-  height: auto;
-}
-#app-mount .panels-3wFtMD > .container-YkUktl .avatarWrapper-1B9FTW {
-  margin-right: 0;
-  margin-top: 12px;
-}
-#app-mount .panels-3wFtMD > .container-YkUktl .avatar-1EWyVD {
-  width: 42px !important;
-  height: 42px !important;
-}
-#app-mount .nameTag-sc-gpq {
-  display: none;
-}
-#app-mount .avatarWrapper-1B9FTW {
-  margin: 0;
-  min-width: unset;
-}
-#app-mount .avatarWrapper-1B9FTW:hover {
-  background: transparent;
-}
+/* Frosted Glass */
 
 .theme-dark {
   --header-primary: #fff;
@@ -261,7 +195,7 @@
 }
 
 #app-mount .app-2CXKsg::before {
-  content: "Your version of Frosted Glass is outdated. Please redownload";
+  content: "Your version of Electrified is outdated. Please redownload";
   white-space: pre-wrap;
   display: var(--update-notice-1, block);
   color: #fff;
@@ -1634,136 +1568,7 @@ html.platform-osx .scroller-2TZvBN {
   }
 }
 
-@charset "UTF-8";
-@import "https://monstrousdev.github.io/themes/addons/donator-tags.css";
-@import "https://monstrousdev.github.io/themes/addons/tag-animations.css";
-
-:root {
-  --mc: var(--main-color);
-}
-
-#app-mount .avatar-2e8lTP + h2 {
-  overflow: visible;
-}
-
-.avatar-2e8lTP:hover + h2 {
-  opacity: 1;
-}
-
-.chat-2ZfjoI>.content-1jQy2l .messages-3amgkR .containerCozy-jafyvG,
-.container-3FojY8 {
-  overflow: visible;
-}
-
-.avatar-2e8lTP + h2::after {
-  color: var(--main-color, var(--mc, rgb(var(--BG-tint-colour, 114, 137, 218))));
-  font-size: 13px;
-  position: absolute;
-  bottom: -23px;
-  left: -29px;
-  border-radius: 2px;
-  cursor: pointer;
-  font-family: BMTicons;
-  pointer-events: none;
-  display: inline-block !important;
-  z-index: 1;
-}
-
-.avatar-2e8lTP:hover + h2::after {
-  font-family: "Whitney", "Helvetica";
-  --main-color: #000;
-  background-color: var(--main-color);
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-  padding: 3px 10px;
-  border-radius: 3px;
-  font-size: 13px;
-  font-weight: 600;
-  z-index: 3000000;
-  display: block;
-  position: absolute;
-  pointer-events: none;
-  color: #fff;
-  width: auto;
-  opacity: 1;
-  box-sizing: border-box;
-  white-space: nowrap;
-  bottom: -31px;
-}
-
-#app-mount .messagesPopoutWrap-3zryHW .avatar-2e8lTP+ h2::after{
-  display: none !important;
-}
-
-
-/* ========= START OF USER TAGS ============== */
-
-  /* before hover */
-.avatar-2e8lTP[src*="107511169366888448"] + h2::after,
-.avatar-2e8lTP[src*="128948605263413248"] + h2::after,
-.avatar-2e8lTP[src*="135824276535115776"] + h2::after,
-.avatar-2e8lTP[src*="443765978132643850"] + h2::after,
-.avatar-2e8lTP[src*="96563253466898432"] + h2::after,
-.avatar-2e8lTP[src*="267803219080642560"] + h2::after,
-.avatar-2e8lTP[src*="194830015353847817"] + h2::after,
-.avatar-2e8lTP[src*="460174770957189155"] + h2::after,
-.avatar-2e8lTP[src*="773960830034378763"] + h2::after{
-  content: "}";
-}
-
-
-  /* on hover */
-.avatar-2e8lTP[src*="194830015353847817"]:hover + h2::after {
-  content: 'Cheesus';
-  --main-color: #51007a;
-}
-
-.avatar-2e8lTP[src*="460174770957189155"]:hover + h2::after {
-  content: 'Currently dying rn';
-  --main-color: #008080;
-}
-
-.avatar-2e8lTP[src*="267803219080642560"]:hover + h2::after {
-  content: "CEO of Red";
-  --main-color: #cc2c24;
-}
-
-.avatar-2e8lTP[src*="128948605263413248"]:hover + h2::after {
-  content: "Dongus";
-}
-
-.avatar-2e8lTP[src*="135824276535115776"]:hover + h2::after {
-  content: "Village Idiot";
-}
-
-.avatar-2e8lTP[src*="443765978132643850"]:hover + h2::after {
-  content: "NEET";
-  --main-color: #3ecc9c;
-}
-
-.avatar-2e8lTP[src*="96563253466898432"]:hover + h2::after {
-  content: "Universal Architect";
-}
-
-.avatar-2e8lTP[src*="773960830034378763"]:hover + h2::after {
-  content: "Birdlinux";
-  --main-color: white;
-  color: black;
-}
-
-@keyframes hue-rotate {
-  from {
-    -webkit-filter: hue-rotate();
-  }
-  to {
-    -webkit-filter: hue-rotate(360deg);
-  }
-}
-
-
-@font-face {
-  font-family: "BMTicons";
-  src: url(data:application/font-ttf;charset=utf-8;base64,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) format("truetype");
-}
+/* SoftX */
 
 html, span:not([class*=spinner-]):not([class*=spinnerItem]) {
   -webkit-backface-visibility: hidden;
@@ -5391,6 +5196,11 @@ body .footer-GXWBBp,
   background: #fff;
 }
 
+:root {
+  --channeldms-popout-width: 500px;
+  --channeldms-popout-collapsed: 50px;
+}
+
 #app-mount .ChannelDms-channelmembers-wrap .privateChannels-oVe7HL {
   width: var(--members-width);
   background: var(--bg-primary);
@@ -5895,53 +5705,3 @@ body #ChannelsPreview::before {
   -webkit-mask: none !important;
           mask: none !important;
 }
-
-.wrapper-1VLyxH[aria-label*=Online i], .wrapper-1VLyxH[aria-label*=online i], .wrapper-1VLyxH[aria-label*=Conectado i], .wrapper-1VLyxH[aria-label*="En línea con móvil" i], .wrapper-1VLyxH[aria-label*="En ligne" i], .wrapper-1VLyxH[aria-label*="Na mreži" i],
-.avatarWrapper[data-status=online] .wrapper-1VLyxH {
-  box-shadow: 0 0 calc(var(--glow-intensity) * 10px) var(--rs-online-color);
-}
-
-.wrapper-1VLyxH[aria-label*=Idle i], .wrapper-1VLyxH[aria-label*=Inaktiv i], .wrapper-1VLyxH[aria-label*=Abwesend i], .wrapper-1VLyxH[aria-label*=Ausente i], .wrapper-1VLyxH[aria-label*=Inactif i], .wrapper-1VLyxH[aria-label*="U mirovanju" i],
-.avatarWrapper[data-status=idle] .wrapper-1VLyxH {
-  box-shadow: 0 0 calc(var(--glow-intensity) * 10px) var(--rs-idle-color);
-}
-
-.wrapper-1VLyxH[aria-label*="Do Not disturb" i], .wrapper-1VLyxH[aria-label*="Vil ikke forstyrres" i], .wrapper-1VLyxH[aria-label*="Bitte nicht stören" i], .wrapper-1VLyxH[aria-label*="No molestar" i], .wrapper-1VLyxH[aria-label*="Ne pas déranger" i], .wrapper-1VLyxH[aria-label*="Ne uznemiravaj" i],
-.avatarWrapper[data-status=dnd] .wrapper-1VLyxH {
-  box-shadow: 0 0 calc(var(--glow-intensity) * 10px) var(--rs-dnd-color);
-}
-
-.wrapper-1VLyxH[aria-label*=Streaming i], .wrapper-1VLyxH[aria-label*=Streamer i], .wrapper-1VLyxH[aria-label*=Streamt i], .wrapper-1VLyxH[aria-label*=Transmitiendo i], .wrapper-1VLyxH[aria-label*="En direct" i],
-.avatarWrapper[data-status=streaming] .wrapper-1VLyxH {
-  box-shadow: 0 0 calc(var(--glow-intensity) * 10px) var(--rs-streaming-color);
-}
-
-.wrapper-1VLyxH[aria-label*=Invisible i], .wrapper-1VLyxH[aria-label*=Usynlig i], .wrapper-1VLyxH[aria-label*=Unsichtbar i], .wrapper-1VLyxH[aria-label*="Nevidljiv/a" i],
-.avatarWrapper[data-status=invisible] .wrapper-1VLyxH {
-  box-shadow: 0 0 calc(var(--glow-intensity) * 10px) var(--rs-invisible-color);
-}
-
-.wrapper-1VLyxH[aria-label*=Offline i], .wrapper-1VLyxH[aria-label*=Desconectado i], .wrapper-1VLyxH[aria-label*="Hors ligne" i], .wrapper-1VLyxH[aria-label*="Izvan mreže" i],
-.avatarWrapper[data-status=offline] .wrapper-1VLyxH {
-  box-shadow: 0 0 calc(var(--glow-intensity) * 10px) var(--rs-offline-color);
-}
-
-.wrapper-1VLyxH[style*="80px"], .wrapper-1VLyxH[style*="120px"] {
-  border-width: 0px;
-  margin-top: 7.5px;
-  margin-left: 7.5px;
-}
-
-#app-mount .wrapper-1VLyxH.StatusEverywhere-avatar-chatAvatar {
-  margin: 0;
-}
-#app-mount .avatarWrapper {
-  border-radius: var(--rs-avatar-shape);
-}
-#app-mount .avatarWrapper .pointerEvents-9SZWKj {
-  stroke: var(--status-color) !important;
-}
-#app-mount .avatarWrapper .pointerEvents-9SZWKj[width="30"] {
-  width: calc(100% - 9px) !important;
-}
-
