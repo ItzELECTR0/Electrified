@@ -6,4 +6,5 @@ Very intense and highly customizable Theme for BetterDiscord
 
 # Links
 RAW Main Theme File: COMING SOON
+
 RAW Preview Theme File: https://itzelectr0.github.io/Electrified/ElectrifiedPreview.css
